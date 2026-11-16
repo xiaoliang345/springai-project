@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springai-project
+  profiles:
+    active: local
+  ai:
+    deepseek:
+      chat:
+        model: deepseek-flash #模型名称
+        temperature: 0.3 #采样温度
+        max-tokens: 2048 #输出最大token数
+        #思考模式如果为disabled,则不用设置思考程度
+        thinking:
+          type: disabled #思考模式
+        reasoning-effort: high #思考程度
+      api-key: #your apikey
+
